@@ -6,6 +6,7 @@
 # I'm not sure what went wrong.
 #
 # confirm by checking against:
+#       http://www.bigprimes.net/cruncher/199999/
 #       https://www.oeis.org/wiki/Template:Is_prime
 #       http://www.tsm-resources.com/alists/prim.html
 # 
