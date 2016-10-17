@@ -2,16 +2,21 @@
 #
 # prints a list of primes
 #
+# This tries to use memoization to speed things up, but it appears to have slowed things down.
+# I'm not sure what went wrong.
+#
 # confirm by checking against:
 #       https://www.oeis.org/wiki/Template:Is_prime
 #       http://www.tsm-resources.com/alists/prim.html
 # 
 import pprint           #pprint.pprint(["hello", "world"])
 import math
+import functools
 
+@functools.lru_cache(maxsize=None)        # memoize
 def prime(x):
     for factor in range(2,int(math.sqrt(x))+1):
-        if x % factor == 0:
+        if prime(factor) and x % factor == 0:
             return False
         #print factor
     return True
@@ -24,3 +29,5 @@ for num in range(2,200001):
         ctr += 1
         print(ctr, " ", num)
 
+
+print("prime() memoization -- ", prime.cache_info())
