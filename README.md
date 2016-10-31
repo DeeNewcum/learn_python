@@ -1,4 +1,4 @@
-# Learn Python
+# I'm learning Python
 Small projects that I created while learning Python.  This is probably uninteresting to anyone but me.
 
 Here are some lists of possible programs to write, when learning a language.
