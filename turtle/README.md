@@ -1,5 +1,7 @@
 # Learning Python using [turtle](http://www.eg.bucknell.edu/~hyde/Python3/TurtleDirections.html)
 
+![spirograph.png](https://raw.githubusercontent.com/DeeNewcum/learn_python/master/turtle/spirograph.png)
+
 polygons / circles / stars / spirals
 
 * [see chapter 6, etc](http://www.educa.fmf.uni-lj.si/logo/doc/discover.htm)

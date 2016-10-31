@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from turtle import *
 from math import *
 
@@ -21,8 +21,12 @@ def t_iterating(R, r, p):
 
     while t < 20*pi:    # loop from 2*pi to 20*pi.
         t += 0.05 * pi
-        goto(formulaX(R, r, p, t), formulaY(R, r, p, t))
+        colr = int((t * 255 / (20 * pi)) % 256)
+        colr_str = "#%02x%02x%02x" % (255-colr, colr, 255)
+        #print(colr_str)
+        pencolor(colr_str)
 
+        goto(formulaX(R, r, p, t), formulaY(R, r, p, t))
 
 
 # radius of the fixed circle
