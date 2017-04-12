@@ -1,8 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # TODO: this would probably be much faster with a Sieve of Eratosenes (sp?)
 
 
+import math
 import pprint
 import sys
 
@@ -38,17 +39,17 @@ def num_factors(n):
 #pprint.pprint(factors(28))
 #sys.exit()
 
-#print num_factors(28)
+#print(num_factors(28))
 #sys.exit()
 
 
 tri = 0
 for i in range(10000, 10000000):
-    tri = (i*i - i) / 2
+    tri = math.floor((i*i - i) / 2)
     #numfacs = len(factors(tri))
     numfacs = num_factors(tri)
     if numfacs >= 100:
-        print str(i) + "   (" + str(numfacs) + ")"
+        print(str(i) + "   (" + str(numfacs) + ")")
     if numfacs > 500:
-        print "-----" + i + "------"
+        print("-----" + i + "------")
         sys.exit()

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # problem statement:
 #
@@ -13,7 +13,7 @@ def is_prime(x):
     for factor in range(2,int(math.sqrt(x))+1):
         if x % factor == 0:
             return False
-        #print factor
+        #print(factor)
     return True
 
 
@@ -23,7 +23,7 @@ for factor in range(3, 775147):          # sqrt(600851475143)
     if factor % 3 == 0 or factor % 5 == 0 or factor % 7 == 0:
         next
     if factor_me % factor == 0 and is_prime(factor):
-        print factor
+        print(factor)
 
 
 

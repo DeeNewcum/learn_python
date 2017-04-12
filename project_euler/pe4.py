@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # problem statement:
 #
@@ -14,7 +14,7 @@ for x in range(100, 1000):
         mult = str(x*y)
         revrsed = mult[::-1]            # tricksy, see http://stackoverflow.com/a/931095/1042525
         if mult == revrsed and x*y > max:
-            print x, " * ", y, " = ", mult
+            print(x, " * ", y, " = ", mult)
             max = x * y
 
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # problem statement:
 #
@@ -15,4 +15,4 @@ for x in range(3, 1000):
     if x % 3 == 0 or x % 5 == 0:
         sum += x
 
-print "the total is: ", sum
+print("the total is: ", sum)

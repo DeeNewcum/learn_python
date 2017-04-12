@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import re
 import pprint       # pprint.pprint(["hello", "world"])
 
@@ -36,10 +36,10 @@ for x in range(0, len(string) - chunksize + 1):
     for y in range(0, chunksize):
         mult *= int(string[x+y])
         substr += string[x+y]
-    #print substr
+    #print(substr)
     if mult > max_mult:
         max_mult = mult
         max_substr  = substr
 
-#print max_substr
-print max_mult
+#print(max_substr)
+print(max_mult)

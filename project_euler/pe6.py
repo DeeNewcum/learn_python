@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #import pprint
 
 
@@ -9,4 +9,4 @@ for i in range(1, 101):
     sum_squares += i*i
     sum += i
 
-print sum*sum - sum_squares
+print(sum*sum - sum_squares)

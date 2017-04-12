@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # problem statement:
 #
@@ -24,9 +24,9 @@ def sieve_of_eratosthenes(n):
         if not sieve[x]:
             continue
         primes.append(x)
-        #print x
+        #print(x)
         for y in range(2*x, n+1, x):
-            #print ">> ", y
+            #print(">> ", y)
             sieve[y] = False
     return primes
 
@@ -36,4 +36,4 @@ sum = 0
 for prime in primes:
     sum += prime
 
-print sum
+print(sum)
